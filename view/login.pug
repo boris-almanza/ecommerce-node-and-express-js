@@ -1,0 +1,25 @@
+doctype 5
+html(lang='es')
+    head
+        title login
+        link(rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css")
+        script(src="/static/bootstrap/js/jquery.js")
+        script(src="/static/bootstrap/popper/dist/popper.js")
+        script(src="/static/bootstrap/js/bootstrap.min.js")
+    body
+        
+        h1 login
+        .container
+            form(action = "/login" method = "POST" class="form-inline" )
+                .form-group
+                    input(name = "email" type = "text" class="form-control" placeholder = "E-mail")
+                .form-group
+                    input(name = "password" type = "password" class="form-control" placeholder = "Password")
+                    
+                br
+        
+                button(type = "Submit") Sign me up!
+
+        
+
+

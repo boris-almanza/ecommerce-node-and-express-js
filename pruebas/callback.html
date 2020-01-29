@@ -1,0 +1,44 @@
+<html>
+
+<head>
+</head>
+<body>
+
+<script>
+var user= {
+    id:"none",
+    nombre:"none",
+    // methods
+
+    setdata: function (idd, namee) {
+        this.id= idd;
+        this.nombre = namee;
+        
+        console.log(this.nombre + this.id )
+    },
+    getdata: function () {
+        console.log(this.nombre + this.id)
+    }
+}
+//============================================00============
+
+function pedir(iden, nombre,callback) {
+    callback(iden, nombre);
+}
+//=================================================00
+
+pedir(34, "boris", user.setdata);
+user.getdata()
+console.log();
+console.log(this.name);
+
+
+</script>
+
+
+</body>
+</html>
+
+
+
+
