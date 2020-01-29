@@ -39,8 +39,8 @@ userSchema.methods.setImgUrl = function (filename) {
 userSchema.pre('save',function (next) {
     
     
-    let user = this;
-    console.log(user);
+    
+    
     
     bcrytp.genSalt( salt_factor ,(err, salt) => {
         if(err){
